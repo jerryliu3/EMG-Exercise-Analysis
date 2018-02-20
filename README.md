@@ -1,1 +1,3 @@
 # Wearable-Project
+
+Featuring EMG.
