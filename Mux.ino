@@ -1,56 +1,48 @@
 //Plot the four different channels in live time! 
-const int selectPinA = 10;
-const int selectPinB = 11;
-//const int dataStream = A5; For testing purposes
+const int selectPinA0 = 10;
+const int selectPinA1 = 11;
 const int outputPin1 = A3;
-const int outputPin2 = A4;
+//const int outputPin2 = A4;
 
-float myArray[]= {0,0,0,0};
-int sensorValue = analogRead(outputPin1) + analogRead(outputPin2); //Add together to simulate IA of EMG. 
+int sensorValue = analogRead(outputPin1); //+ analogRead(outputPin2); //Add together to simulate IA of EMG. 
 
 void setup() 
 {
-  Serial.begin(115200); // Initialize the serial port
-  pinMode(selectPinA, OUTPUT);
-  pinMode(selectPinB, OUTPUT);
-  //pinMode(dataStream, INPUT);
+  Serial.begin(9600); // Initialize the serial port
+  pinMode(selectPinA0, OUTPUT);
+  pinMode(selectPinA1, OUTPUT);
   pinMode(outputPin1, INPUT);
-  pinMode(outputPin2, INPUT);
+  //pinMode(outputPin2, INPUT);
 }
 
 void loop() 
 {
   // Loop through all four permutations.
-  for (int i=0; i<4; i++)
+  for (int i=0; i<4000; i++)
   {
-    if (i==0) 
+    if (i<1000) // Left Bicep
     {
-      digitalWrite(selectPinA, LOW);
-      digitalWrite(selectPinB, LOW);
+      digitalWrite(selectPinA0, LOW);
+      digitalWrite(selectPinA1, LOW);
     }
-    else if (i==1) 
+    else if (i<2000) // Right Bicep
     {
-      digitalWrite(selectPinA, LOW);
-      digitalWrite(selectPinB, HIGH);
+      digitalWrite(selectPinA0, HIGH);
+      digitalWrite(selectPinA1, LOW);
     }
-    else if (i==2) 
+    else if (i<3000) // Left Forearm
     {
-      digitalWrite(selectPinA, HIGH);
-      digitalWrite(selectPinB, LOW);
+      digitalWrite(selectPinA0, LOW);
+      digitalWrite(selectPinA1, HIGH);
     }
-    else
+    else // Right Forearm
     {
-      digitalWrite(selectPinA, HIGH);
-      digitalWrite(selectPinB, HIGH);
+      digitalWrite(selectPinA0, HIGH);
+      digitalWrite(selectPinA1, HIGH);
     }
-    sensorValue = analogRead(outputPin1) + analogRead(outputPin2);
-    myArray[i] = sensorValue;
-    Serial.print(myArray[0]);
-    Serial.print(",");
-    Serial.print(myArray[1]);
-    Serial.print(",");
-    Serial.print(myArray[2]);
-    Serial.print(",");
-    Serial.println(myArray[3]);
+    sensorValue = analogRead(outputPin1); //+ analogRead(outputPin2);
+    Serial.println(sensorValue * (10.0 / 1023.0));
+    //Serial.print(String(i) + ",");
+    //Serial.println(sensorValue*(10.0/1023.0),10);
   }
 }
