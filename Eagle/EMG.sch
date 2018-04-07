@@ -6299,7 +6299,7 @@ general purpose rectifier, 1 A</description>
 <instance part="PAD12" gate="P" x="-1668.78" y="5.08"/>
 <instance part="PAD13" gate="P" x="-1668.78" y="2.54"/>
 <instance part="PAD14" gate="P" x="-1668.78" y="0"/>
-<instance part="PAD15" gate="P" x="-1328.42" y="15.24"/>
+<instance part="PAD15" gate="P" x="-1328.42" y="15.24" rot="R180"/>
 <instance part="PAD16" gate="P" x="-1625.6" y="-27.94"/>
 <instance part="PAD17" gate="P" x="-1645.92" y="-27.94"/>
 </instances>
@@ -6441,8 +6441,8 @@ general purpose rectifier, 1 A</description>
 <pinref part="IC3" gate="G$1" pin="+IN"/>
 <wire x1="-1366.52" y1="12.7" x2="-1366.52" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-1617.98" y1="-12.7" x2="-1623.06" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-1623.06" y1="-12.7" x2="-1643.38" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="IC9" gate="G$3" pin="GND"/>
+<wire x1="-1623.06" y1="-12.7" x2="-1643.38" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-1643.38" y1="-12.7" x2="-1663.7" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-1663.7" y1="-12.7" x2="-1666.24" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="-1628.14" y1="5.08" x2="-1623.06" y2="5.08" width="0.1524" layer="91"/>
@@ -6450,9 +6450,6 @@ general purpose rectifier, 1 A</description>
 <junction x="-1623.06" y="-12.7"/>
 <pinref part="PAD2" gate="P" pin="P"/>
 <junction x="-1663.7" y="-12.7"/>
-<wire x1="-1623.06" y1="-12.7" x2="-1623.06" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-1643.38" y1="-12.7" x2="-1643.38" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="-1643.38" y="-12.7"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="-1546.86" y="-12.7"/>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -6460,6 +6457,11 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1546.86" y1="-10.16" x2="-1549.4" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-1549.4" y1="-10.16" x2="-1549.4" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-1549.4" y="-12.7"/>
+<pinref part="PAD17" gate="P" pin="P"/>
+<wire x1="-1643.38" y1="-27.94" x2="-1643.38" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-1643.38" y="-12.7"/>
+<pinref part="PAD16" gate="P" pin="P"/>
+<wire x1="-1623.06" y1="-27.94" x2="-1623.06" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6544,7 +6546,8 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1351.28" y1="15.24" x2="-1351.28" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-1351.28" y1="30.48" x2="-1353.82" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-1351.28" y1="15.24" x2="-1328.42" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="PAD15" gate="P" pin="P"/>
+<wire x1="-1351.28" y1="15.24" x2="-1330.96" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-1351.28" y="15.24"/>
 </segment>
 </net>
