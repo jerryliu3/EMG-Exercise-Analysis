@@ -14,6 +14,14 @@
 	* Electrodes
 4. Attach the “nervous system” to the “skin”
 5. Collect more data (Jerry’s different classes)
+	* Bicep curl
+	* Back pulldown
+	* Wide chin/pullup
+	* Narrow chinup
+	* Rowing
+	* Wrist curl
+	* Wrist 
+	* (optional) Tricep stuff
 6. Pass data through seglearn
 	* Option 1: get seglearn working on a phone
 	* Option 2: get the data off the phone and run seglearn on a computer
