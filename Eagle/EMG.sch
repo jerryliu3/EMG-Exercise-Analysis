@@ -6144,24 +6144,24 @@ general purpose rectifier, 1 A</description>
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1,6/0,8" urn="urn:adsk.eagle:footprint:30809/1" library_version="1">
+<package name="2,15/1,0" urn="urn:adsk.eagle:footprint:30813/1" library_version="1">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="-0.762" y1="0.762" x2="-0.508" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.508" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.762" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="-0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
+<wire x1="1.143" y1="-1.143" x2="1.143" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-1.143" x2="0.635" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.635" x2="1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="1.143" x2="0.635" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.143" x2="-1.143" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="1.143" x2="-1.143" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-1.143" x2="-0.635" y2="-1.143" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="1.016" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-1.143" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="1" size="0.0254" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="1,6/0,8" urn="urn:adsk.eagle:package:30830/1" type="box" library_version="1">
+<package3d name="2,15/1,0" urn="urn:adsk.eagle:package:30831/1" type="box" library_version="1">
 <description>THROUGH-HOLE PAD</description>
 </package3d>
 </packages3d>
@@ -6175,18 +6175,18 @@ general purpose rectifier, 1 A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1,6/0,8" urn="urn:adsk.eagle:component:30848/1" prefix="PAD" uservalue="yes" library_version="1">
+<deviceset name="2,15/1,0" urn="urn:adsk.eagle:component:30850/1" prefix="PAD" uservalue="yes" library_version="1">
 <description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <gates>
-<gate name="P" symbol="PAD" x="0" y="0"/>
+<gate name="1" symbol="PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1,6/0,8">
+<device name="" package="2,15/1,0">
 <connects>
-<connect gate="P" pin="P" pad="1"/>
+<connect gate="1" pin="P" pad="1"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:30830/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30831/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -6234,23 +6234,23 @@ general purpose rectifier, 1 A</description>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
 <part name="IC9" library="maxim" library_urn="urn:adsk.eagle:library:269" deviceset="MAX339CPE" device="" package3d_urn="urn:adsk.eagle:package:17502/1"/>
-<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD10" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD11" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD12" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD13" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD14" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD15" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD16" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
-<part name="PAD17" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="1,6/0,8" device="" package3d_urn="urn:adsk.eagle:package:30830/1"/>
+<part name="PAD1" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD2" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD3" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD4" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD5" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD6" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD7" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD8" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD9" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD10" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD11" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD12" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD13" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD14" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD15" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD16" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
+<part name="PAD17" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="2,15/1,0" device="" package3d_urn="urn:adsk.eagle:package:30831/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -6285,23 +6285,23 @@ general purpose rectifier, 1 A</description>
 <instance part="D1" gate="1" x="-1457.96" y="22.86" rot="R270"/>
 <instance part="D2" gate="1" x="-1457.96" y="10.16" rot="R270"/>
 <instance part="IC9" gate="G$3" x="-1643.38" y="15.24"/>
-<instance part="PAD1" gate="P" x="-1661.16" y="43.18"/>
-<instance part="PAD2" gate="P" x="-1666.24" y="-12.7"/>
-<instance part="PAD3" gate="P" x="-1628.14" y="-20.32"/>
-<instance part="PAD4" gate="P" x="-1668.78" y="30.48"/>
-<instance part="PAD5" gate="P" x="-1668.78" y="27.94"/>
-<instance part="PAD6" gate="P" x="-1668.78" y="25.4"/>
-<instance part="PAD7" gate="P" x="-1668.78" y="22.86"/>
-<instance part="PAD8" gate="P" x="-1668.78" y="17.78"/>
-<instance part="PAD9" gate="P" x="-1668.78" y="15.24"/>
-<instance part="PAD10" gate="P" x="-1668.78" y="12.7"/>
-<instance part="PAD11" gate="P" x="-1668.78" y="10.16"/>
-<instance part="PAD12" gate="P" x="-1668.78" y="5.08"/>
-<instance part="PAD13" gate="P" x="-1668.78" y="2.54"/>
-<instance part="PAD14" gate="P" x="-1668.78" y="0"/>
-<instance part="PAD15" gate="P" x="-1328.42" y="15.24" rot="R180"/>
-<instance part="PAD16" gate="P" x="-1625.6" y="-27.94"/>
-<instance part="PAD17" gate="P" x="-1645.92" y="-27.94"/>
+<instance part="PAD1" gate="1" x="-1661.16" y="43.18"/>
+<instance part="PAD2" gate="1" x="-1666.24" y="-12.7"/>
+<instance part="PAD3" gate="1" x="-1628.14" y="-20.32"/>
+<instance part="PAD4" gate="1" x="-1668.78" y="30.48"/>
+<instance part="PAD5" gate="1" x="-1668.78" y="27.94"/>
+<instance part="PAD6" gate="1" x="-1668.78" y="25.4"/>
+<instance part="PAD7" gate="1" x="-1668.78" y="22.86"/>
+<instance part="PAD8" gate="1" x="-1668.78" y="17.78"/>
+<instance part="PAD9" gate="1" x="-1668.78" y="15.24"/>
+<instance part="PAD10" gate="1" x="-1668.78" y="12.7"/>
+<instance part="PAD11" gate="1" x="-1668.78" y="10.16"/>
+<instance part="PAD12" gate="1" x="-1668.78" y="5.08"/>
+<instance part="PAD13" gate="1" x="-1668.78" y="2.54"/>
+<instance part="PAD14" gate="1" x="-1668.78" y="0"/>
+<instance part="PAD15" gate="1" x="-1328.42" y="15.24" rot="R180"/>
+<instance part="PAD16" gate="1" x="-1625.6" y="-27.94"/>
+<instance part="PAD17" gate="1" x="-1645.92" y="-27.94"/>
 </instances>
 <busses>
 </busses>
@@ -6339,7 +6339,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1397" y1="25.4" x2="-1397" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-1397" y="43.18"/>
 <wire x1="-1590.04" y1="43.18" x2="-1617.98" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="P" pin="P"/>
+<pinref part="PAD1" gate="1" pin="P"/>
 <wire x1="-1617.98" y1="43.18" x2="-1658.62" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-1658.62" y1="43.18" x2="-1661.16" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-1658.62" y="43.18"/>
@@ -6448,7 +6448,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1628.14" y1="5.08" x2="-1623.06" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-1623.06" y1="5.08" x2="-1623.06" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-1623.06" y="-12.7"/>
-<pinref part="PAD2" gate="P" pin="P"/>
+<pinref part="PAD2" gate="1" pin="P"/>
 <junction x="-1663.7" y="-12.7"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="-1546.86" y="-12.7"/>
@@ -6457,10 +6457,10 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1546.86" y1="-10.16" x2="-1549.4" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-1549.4" y1="-10.16" x2="-1549.4" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-1549.4" y="-12.7"/>
-<pinref part="PAD17" gate="P" pin="P"/>
+<pinref part="PAD17" gate="1" pin="P"/>
 <wire x1="-1643.38" y1="-27.94" x2="-1643.38" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-1643.38" y="-12.7"/>
-<pinref part="PAD16" gate="P" pin="P"/>
+<pinref part="PAD16" gate="1" pin="P"/>
 <wire x1="-1623.06" y1="-27.94" x2="-1623.06" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6546,7 +6546,7 @@ general purpose rectifier, 1 A</description>
 <wire x1="-1351.28" y1="15.24" x2="-1351.28" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-1351.28" y1="30.48" x2="-1353.82" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="PAD15" gate="P" pin="P"/>
+<pinref part="PAD15" gate="1" pin="P"/>
 <wire x1="-1351.28" y1="15.24" x2="-1330.96" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-1351.28" y="15.24"/>
 </segment>
@@ -6637,7 +6637,7 @@ general purpose rectifier, 1 A</description>
 <label x="-1633.22" y="-20.32" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <junction x="-1546.86" y="-20.32"/>
-<pinref part="PAD3" gate="P" pin="P"/>
+<pinref part="PAD3" gate="1" pin="P"/>
 <junction x="-1625.6" y="-20.32"/>
 <pinref part="IC9" gate="G$3" pin="V+"/>
 <wire x1="-1628.14" y1="10.16" x2="-1615.44" y2="10.16" width="0.1524" layer="91"/>
@@ -6666,7 +6666,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO1A"/>
 <wire x1="-1656.08" y1="30.48" x2="-1666.24" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="PAD4" gate="P" pin="P"/>
+<pinref part="PAD4" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="30.48" x2="-1668.78" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="30.48"/>
 </segment>
@@ -6675,7 +6675,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO2A"/>
 <wire x1="-1656.08" y1="27.94" x2="-1666.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="PAD5" gate="P" pin="P"/>
+<pinref part="PAD5" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="27.94" x2="-1668.78" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="27.94"/>
 </segment>
@@ -6684,7 +6684,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO3A"/>
 <wire x1="-1656.08" y1="25.4" x2="-1666.24" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="PAD6" gate="P" pin="P"/>
+<pinref part="PAD6" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="25.4" x2="-1668.78" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="25.4"/>
 </segment>
@@ -6693,7 +6693,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO4A"/>
 <wire x1="-1656.08" y1="22.86" x2="-1666.24" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="PAD7" gate="P" pin="P"/>
+<pinref part="PAD7" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="22.86" x2="-1668.78" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="22.86"/>
 </segment>
@@ -6702,7 +6702,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO1B"/>
 <wire x1="-1656.08" y1="17.78" x2="-1666.24" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="PAD8" gate="P" pin="P"/>
+<pinref part="PAD8" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="17.78" x2="-1668.78" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="17.78"/>
 </segment>
@@ -6711,7 +6711,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO3B"/>
 <wire x1="-1656.08" y1="12.7" x2="-1666.24" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="PAD10" gate="P" pin="P"/>
+<pinref part="PAD10" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="12.7" x2="-1668.78" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="12.7"/>
 </segment>
@@ -6720,7 +6720,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO2B"/>
 <wire x1="-1656.08" y1="15.24" x2="-1666.24" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="PAD9" gate="P" pin="P"/>
+<pinref part="PAD9" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="15.24" x2="-1668.78" y2="15.24" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="15.24"/>
 </segment>
@@ -6729,7 +6729,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="NO4B"/>
 <wire x1="-1656.08" y1="10.16" x2="-1666.24" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="PAD11" gate="P" pin="P"/>
+<pinref part="PAD11" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="10.16" x2="-1668.78" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="10.16"/>
 </segment>
@@ -6738,7 +6738,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="A0"/>
 <wire x1="-1656.08" y1="5.08" x2="-1666.24" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="PAD12" gate="P" pin="P"/>
+<pinref part="PAD12" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="5.08" x2="-1668.78" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="5.08"/>
 </segment>
@@ -6747,7 +6747,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="A1"/>
 <wire x1="-1656.08" y1="2.54" x2="-1666.24" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="PAD13" gate="P" pin="P"/>
+<pinref part="PAD13" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="2.54" x2="-1668.78" y2="2.54" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="2.54"/>
 </segment>
@@ -6756,7 +6756,7 @@ general purpose rectifier, 1 A</description>
 <segment>
 <pinref part="IC9" gate="G$3" pin="EN"/>
 <wire x1="-1656.08" y1="0" x2="-1666.24" y2="0" width="0.1524" layer="91"/>
-<pinref part="PAD14" gate="P" pin="P"/>
+<pinref part="PAD14" gate="1" pin="P"/>
 <wire x1="-1666.24" y1="0" x2="-1668.78" y2="0" width="0.1524" layer="91"/>
 <junction x="-1666.24" y="0"/>
 </segment>
