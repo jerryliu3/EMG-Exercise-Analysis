@@ -1,0 +1,4 @@
+#Sat Apr 07 22:37:18 EDT 2018
+base.0=C\:\\Users\\3jerr\\Desktop\\2018 Side Projects\\Wearable App\\Wearable-Project\\BlunoWearableApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex
