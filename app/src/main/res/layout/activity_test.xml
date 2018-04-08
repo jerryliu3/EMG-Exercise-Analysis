@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dfrobot.angelo.blunobasicdemo.TestActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/serialSendText">
+
+        <TextView
+            android:id="@+id/serialReveicedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="10sp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignEnd="@+id/serialSendText"
+            android:layout_alignParentBottom="true" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonSerialSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/serialSendText"
+        android:layout_alignParentTop="true"
+        android:text="SEND DATA" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serialSendText"
+        android:layout_below="@+id/serialSendText"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="Received Data:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/serialSendText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonScan"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="22dp"
+        android:background="#555555"
+        android:bufferType="editable"
+        android:ems="10"
+        android:inputType="text"
+        android:text="1 2 3 4"
+        android:textColor="#999999"
+        android:textSize="20dip" />
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serialSendText"
+        android:layout_alignParentTop="true"
+        android:text="Scan" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="25dp"
+        android:text="READ" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/read"
+        android:layout_below="@+id/read"
+        android:layout_marginTop="28dp"
+        android:onClick = "saveData"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/save"
+        android:layout_below="@+id/save"
+        android:layout_marginTop="53dp"
+        android:text="Export" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/serialSendText"
+        android:layout_alignEnd="@+id/export"
+        android:onClick="startMainActivity"
+        android:text="Back" />
+</RelativeLayout>
+
