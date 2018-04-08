@@ -32,8 +32,6 @@ public class ExerciseActivity extends AppCompatActivity implements SensorEventLi
 
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
-
-    private RelativeLayout exerciseLayout;
     private LineChart mChart;
     private Thread thread;
     private boolean plotData = true;;
@@ -42,7 +40,6 @@ public class ExerciseActivity extends AppCompatActivity implements SensorEventLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
-        exerciseLayout = (RelativeLayout) findViewById(R.id.exerciseLayout);
         // create line chart
         mChart = (LineChart) findViewById(R.id.linechart);
 

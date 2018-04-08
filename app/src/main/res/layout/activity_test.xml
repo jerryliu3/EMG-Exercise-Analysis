@@ -5,25 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dfrobot.angelo.blunobasicdemo.TestActivity">
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linechart"></com.github.mikephil.charting.charts.LineChart>
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="250sp"
         android:id="@+id/scrollView"
         android:layout_below="@+id/editText2"
         android:layout_alignStart="@+id/editText2"
-        android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/serialSendText">
 
         <TextView
-            android:id="@+id/serialReveicedText"
+            android:id="@+id/serialReceivedText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textSize="10sp"
             android:layout_below="@+id/editText2"
             android:layout_alignStart="@+id/editText2"
-            android:layout_alignEnd="@+id/serialSendText"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignEnd="@+id/serialSendText" />
     </ScrollView>
 
     <Button
@@ -74,8 +79,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="10dp"
         android:text="READ" />
 
     <Button
@@ -84,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/read"
         android:layout_below="@+id/read"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="13dp"
         android:onClick = "saveData"
         android:text="Save" />
 
@@ -94,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/save"
         android:layout_below="@+id/save"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="15dp"
         android:text="Export" />
 
     <Button
