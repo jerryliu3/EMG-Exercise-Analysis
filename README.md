@@ -1,15 +1,15 @@
 # Wearable-Project
 
-1. Complete Eagle File
+1. Complete Eagle File - DONE
 	* 11 input pins (+ 3 internal battery pins + 2 internal output pins)
 	* 1 output pin
 	* 3 battery pins
 	* 1 Arduino ground pin
 	* 1 patient ground pin
-2. Order PCB
+2. Order PCB - DONE
 3. Combine components
 	* PCB
-	* Bluno Beetle (Jerry’s app)
+	* Bluno Beetle (Jerry’s app) - Need Arduino code
 	* Batteries
 	* Electrodes
 4. Attach the “nervous system” to the “skin”
