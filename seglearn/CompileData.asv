@@ -18,18 +18,18 @@ end
 csvwrite(filename2, matrix);
 
 %% combine a directory of files together
-foldername = 'WC_S';
+foldername = 'BC_A';
 filepath = ['C:\Users\window\Documents\JerryLiu\Wearable-Project\seglearn\Raw_Data_Edited\'];
-unconcatenated_path = [filepath 'Unconcatenated\' foldername '\'];
+unconcatenated_path = [filepath 'Unconcatenated\'];
 concatenated_path = [filepath 'Concatenated\'];
 cd(unconcatenated_path);
-folder = dir(['*.csv']);
+folder = dir([filepath '*.csv']);
 matrix = [];
 for i = 1:length(folder)
     filename = folder(i).name;
     matrix = [matrix;csvread(filename)];
 end
-cd(filepath);
-%[filepath, name, ext] = fileparts(folder(1).name);
+disp('hi');
+[filepath, name, ext] = fileparts(folder(1).name);
 disp(length(matrix));
 csvwrite([concatenated_path foldername '_concatenated.csv'], matrix);
