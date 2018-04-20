@@ -58,18 +58,14 @@ def main(fileNames, properNames, fileDir, finalDir):
 
 # The three variables below need to be manually set
 properNames = ["BC_A",
-			   "BR_1",
-			   "BR_2",
-			   "CU",
-			   "BC_S",
-			   "WC_S",
+			   "BR",
+			   "BP_1",
+			   "BP_2",
+			   "BP_3",
 			   "WC_L",
-			   "PU",
+			   "BP_N",
 			   "WC_R",
-			   "BC_S_1",
-			   "BC_S_2",
-			   "BP_W_1",
-			   "BP_W_2"]
+			   "WC_S",]
 fileDir = "C:\\Users\\Fusion\\Desktop\\Raw_Data\\"
 finalDir = "C:\\Users\\Fusion\\Desktop\\Raw_Data_edited\\"
 
