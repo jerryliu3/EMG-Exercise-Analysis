@@ -19,3 +19,5 @@ TO DO:
 	* Option 2: get the data off the phone and run seglearn on a computer
 
 3. Improve machine learning and database handling
+
+4. Test interfacing of the app and the Bluno Beetle instead of the app and Arduino for communication
