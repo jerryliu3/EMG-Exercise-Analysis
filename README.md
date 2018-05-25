@@ -1,4 +1,4 @@
-# Wearable-Project
+# EMG-Exercise-Analysis
 Current project functionalities:
 
 
