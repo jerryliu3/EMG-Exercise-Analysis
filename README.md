@@ -1,28 +1,21 @@
 # Wearable-Project
+Current project functionalities:
 
-1. Complete Eagle File - DONE
-	* 11 input pins (+ 3 internal battery pins + 2 internal output pins)
-	* 1 output pin
-	* 3 battery pins
-	* 1 Arduino ground pin
-	* 1 patient ground pin
-2. Order PCB - DONE
-3. Combine components
-	* PCB
-	* Bluno Beetle (Jerry’s app) - Need Arduino code
-	* Batteries
-	* Electrodes
-4. Attach the “nervous system” to the “skin”
-5. Collect more data (Jerry’s different classes)
-	* Bicep curl
-	* Back pulldown
-	* Wide chin/pullup
-	* Narrow chinup
-	* Rowing
-	* Wrist curl
-	* Wrist 
-	* (optional) Tricep stuff
-6. Pass data through seglearn
+
+1. Take EMG signals from 4 channels and pass them through the PCB to remove noise and amplify the signal
+
+2. Transfer the data over Bluetooth to the Android app which receives and updates multiline graphs in real time.
+
+3. Save the data on a local file or online database
+
+4. Put the data through a random forest classifier for exercise classification of 9 different exercises
+
+TO DO:
+
+1. Attach the “nervous system” to the “skin”
+
+2. Pass data through seglearn
 	* Option 1: get seglearn working on a phone
 	* Option 2: get the data off the phone and run seglearn on a computer
-7. Utilize results in the app
+
+3. Improve machine learning and database handling
